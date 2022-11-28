@@ -1,0 +1,30 @@
+- commande : nano nameofscript.sh
+
+in text editor begin with the shebang : #!/bin/bash
+-type your text with echo "blabla" and your arguments with "$"
+    the argument can be a command 
+    for examples : 
+        name=$1
+        compliment=$2
+        user=$(whoami)
+        date=$(date)
+        whereami=$(pwd)
+            echo "good morning $name"
+            sleep 1
+            echo "you're looking good $name"
+            sleep 1
+            echo "you have the best $compliment I'v ever seen $name"
+            sleep 2
+
+            echo "you are currently logged in as $user and your are in the dire$
+            $whereami. also today is $date"
+
+- commande : chmod +x nameofscript.sh
+- commande : bash nameofscript.sh ou ./nameofscript
+
+- variable : on peut créer une variable en lui assignant une valeur.
+            cette valeur peut contenir un nombre, un caractère ou une ligne de caractères.
+            il faudra utiliser le "=" sans espaces ni avant ni après le signe.
+            N.B: une combinaison de lettres sera séparé par "_"
+
+
